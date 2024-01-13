@@ -1,0 +1,89 @@
+body {
+    background-color: #000;
+    /*Blackbackgroundtheme*/background-image: url(./b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+   background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #000;
+    /*Blackbackgroundtheme*/border: 1px solid #444;
+    /*Darkborderforthecalculator*/border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+    height:auto;
+    margin: 10px;
+     /* Adjust width as needed */:;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.display {
+    padding: 20px;
+    background-color: #000; /* Black background theme */
+    text-align: right;
+    color: #fff; /* White text color */
+    font-size: 16px;
+}
+
+.expression {
+    color: #aaa; /* Light gray expression color */
+    font-size: 12px;
+}
+
+.result {
+    font-size: 28px;
+    margin-top: 5px;
+    color: #fff; /* White result color */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #000; /* Text color for buttons */
+    background-color: #ff9800; /* Orange button color */
+    border-radius: 50%; /* Round buttons */
+    margin: 5px; /* Adjust margin as needed */
+}
+
+button.operator {
+    background-color: #333; /* Darker background for operators */
+}
+
+button.equal {
+    background-color: #4caf50; /* Green background for equal button */
+}
+
+button:hover {
+    background-color: #e6e6e6; /* Light gray on hover */
+}
+
+/* Add more styles for specific button types (number, operator, equal) */
+
+/* Additional styles for portrait mode */
+@media (max-width: 800px) {
+    .calculator {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}
+
